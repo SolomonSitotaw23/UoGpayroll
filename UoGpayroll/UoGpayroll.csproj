@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20210816092945_AddEmployeeToDb.cs" />
+    <Compile Include="Migrations\20210816092945_AddEmployeeToDb.Designer.cs" />
+    <Compile Include="Migrations\20210816101352_AddfinanceToDb.cs" />
+    <Compile Include="Migrations\20210816101352_AddfinanceToDb.Designer.cs" />
+    <Compile Include="Migrations\20210816102339_AddPayroll.cs" />
+    <Compile Include="Migrations\20210816102339_AddPayroll.Designer.cs" />
+    <Compile Include="Migrations\20210816104635_AddTax.cs" />
+    <Compile Include="Migrations\20210816104635_AddTax.Designer.cs" />
+    <Compile Include="Migrations\ApplicationDbContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
